@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold's Gym Elite Trainers</title>
+    <link href="https://unpkg.com/flickity@2.2.2/dist/flickity.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f8f8f8;
+            color: #333;
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        .trainer-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            width: 100%;
+        }
+
+        .trainer-slide {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .trainer-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ddd;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+        }
+
+        .trainer-name {
+            font-size: 1.8rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .trainer-role {
+            font-size: 1.2rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .trainer-bio {
+            font-size: 1rem;
+            color: #555;
+            padding: 0 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .specialization {
+            font-size: 0.9rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .flickity-page-dots {
+            position: static;
+            margin-top: 20px;
+        }
+
+        .flickity-button {
+            background: #ddd;
+            opacity: 1;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .flickity-button:hover {
+            background: #bbb;
+            transform: scale(1.1);
+        }
+
+        .flickity-button-icon {
+            fill: #333 !important;
+        }
+
+        .flickity-viewport {
+            overflow: hidden !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .trainer-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .trainer-name {
+                font-size: 1.5rem;
+            }
+
+            .trainer-role {
+                font-size: 1rem;
+            }
+
+            .trainer-bio {
+                font-size: 0.9rem;
+                padding: 0 1rem;
+            }
+
+            .flickity-button {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trainer-container">
+        <div class="slider" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "autoPlay": false, "pageDots": true, "prevNextButtons": true, "draggable": true }'>
+            <!-- Trainer 1 -->
+            <div class="trainer-slide">
+                <img src="https://harishprimepaintservice.site/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-03-at-23.31.44_26bd730b.jpg" alt="Trainer" class="trainer-img">
+                <div class="trainer-details">
+                    <h1 class="trainer-name">Harmanjeet</h1>
+                    <div class="trainer-role">Personal Trainer</div>
+                    <p class="trainer-bio">He is a certified Personal Trainer from Gold’s Gym Fitness Institute and NSCA Certified Sports & Exercise Nutritionist.</p>
+                    <div class="specialization">Specialized in: HIIT Training, Fat Loss, Functional Training, Body Weight Workout, MMA</div>
+                </div>
+            </div>
+
+            <!-- Trainer 2 -->
+            <div class="trainer-slide">
+                <img src="https://harishprimepaintservice.site/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-03-at-23.31.44_26bd730b.jpg" alt="Trainer" class="trainer-img">
+                <div class="trainer-details">
+                    <h1 class="trainer-name">Anil Kumar</h1>
+                    <div class="trainer-role">Senior Coach</div>
+                    <p class="trainer-bio">An expert in sports-specific training and an Olympic coaching team member with over 15+ years of experience.</p>
+                    <div class="specialization">Specialized in: Athlete Training, Strength & Conditioning</div>
+                </div>
+            </div>
+
+            <!-- Trainer 3 -->
+            <div class="trainer-slide">
+                <img src="https://harishprimepaintservice.site/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-03-at-23.31.44_26bd730b.jpg" alt="Trainer" class="trainer-img">
+                <div class="trainer-details">
+                    <h1 class="trainer-name">Neeta Roy</h1>
+                    <div class="trainer-role">Zumba Instructor</div>
+                    <p class="trainer-bio">A certified Zumba Instructor and dance fitness expert with a focus on improving flexibility and endurance.</p>
+                    <div class="specialization">Specialized in: Zumba, Aerobics Fusion</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
